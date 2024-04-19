@@ -19,7 +19,7 @@ RSpec.describe CostCalculator do
 
   describe '#calculate_grand_total' do
     it 'returns the grand total of all coworkers beverages' do
-      expect(CostCalculator.calculate_grand_total).to_eq(56)
+      expect(CostCalculator.calculate_grand_total).to eq(56)
     end
   end
 end
