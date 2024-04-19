@@ -8,6 +8,7 @@ RSpec.describe Coworker, type: :model do
   end
 
   describe 'relationships' do
-    it { should have_one(:beverage) }
+    it { should have_one(:coworker_beverage) }
+    it { should have_one(:beverage).through(:coworker_beverage) }
   end
 end

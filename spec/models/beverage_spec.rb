@@ -8,6 +8,6 @@ RSpec.describe Beverage, type: :model do
   end
 
   describe 'relationships' do
-    it { should belong_to(:coworker) }
+    it { should have_many(:coworker_beverages) }
   end
 end
