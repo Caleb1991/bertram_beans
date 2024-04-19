@@ -6,4 +6,8 @@ RSpec.describe Coworker, type: :model do
     it { should validate_uniqueness_of(:name) }
     it { should validate_numericality_of(:cost_burden_incurred) }
   end
+
+  describe 'relationships' do
+    it { should have_one(:beverage) }
+  end
 end

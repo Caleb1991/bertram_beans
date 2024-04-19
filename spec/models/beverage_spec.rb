@@ -6,4 +6,8 @@ RSpec.describe Beverage, type: :model do
     it { should validate_presence_of(:cost) }
     it { should validate_numericality_of(:cost) }
   end
+
+  describe 'relationships' do
+    it { should belong_to(:coworker) }
+  end
 end
