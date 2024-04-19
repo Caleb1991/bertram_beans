@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_04_19_014347) do
+ActiveRecord::Schema[7.0].define(version: 2024_04_19_022521) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,8 +19,15 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_19_014347) do
     t.float "cost"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "coworker_beverages", force: :cascade do |t|
+    t.bigint "beverage_id", null: false
     t.bigint "coworker_id", null: false
-    t.index ["coworker_id"], name: "index_beverages_on_coworker_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["beverage_id"], name: "index_coworker_beverages_on_beverage_id"
+    t.index ["coworker_id"], name: "index_coworker_beverages_on_coworker_id"
   end
 
   create_table "coworkers", force: :cascade do |t|
@@ -30,5 +37,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_19_014347) do
     t.float "cost_burden_incurred", default: 0.0
   end
 
-  add_foreign_key "beverages", "coworkers"
+  add_foreign_key "coworker_beverages", "beverages"
+  add_foreign_key "coworker_beverages", "coworkers"
 end
