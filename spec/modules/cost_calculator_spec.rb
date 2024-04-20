@@ -22,4 +22,19 @@ RSpec.describe CostCalculator do
       expect(CostCalculator.calculate_grand_total).to eq(56)
     end
   end
+
+  describe '#determine_payer' do
+    it 'returns the coworker object of whose turn it is to pay' do 
+      expect(CostCalculator.determine_payer).to eq(Coworker.find_by(name: 'Becky'))
+      expect(CostCalculator.determine_payer).to eq(Coworker.find_by(name: 'Yor'))
+      expect(CostCalculator.determine_payer).to eq(Coworker.find_by(name: 'Loid'))
+      expect(CostCalculator.determine_payer).to eq(Coworker.find_by(name: 'Bondo'))
+      expect(CostCalculator.determine_payer).to eq(Coworker.find_by(name: 'Anya'))
+      expect(CostCalculator.determine_payer).to eq(Coworker.find_by(name: 'Bob'))
+      expect(CostCalculator.determine_payer).to eq(Coworker.find_by(name: 'Becky'))
+      expect(CostCalculator.determine_payer).to eq(Coworker.find_by(name: 'Yor'))
+      expect(CostCalculator.determine_payer).to eq(Coworker.find_by(name: 'Loid'))
+      expect(CostCalculator.determine_payer).to eq(Coworker.find_by(name: 'Jeremy'))
+    end
+  end
 end
