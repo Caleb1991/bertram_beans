@@ -1,0 +1,6 @@
+.form
+  = simple_form_for @coworker do |f|
+    = f.input :name, label: false, input_html: { id: 'coworker_name', placeholder: 'Coworker Name'}
+    = f.button :submit, 'Create'
+.footer-img
+  = image_tag('stock_images/naassom-azevedo-Q_Sei-TqSlc-unsplash.jpg')

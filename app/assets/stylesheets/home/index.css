@@ -1,10 +1,5 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .location {
-  background-color: navy;
+  background-color: rgba(5, 14, 71);
 
   .city-state {
     color: gray;
@@ -20,28 +15,32 @@ body {
   flex-direction: row;
   padding: 5px;
   align-items: center;
+  
+  a {
+    text-decoration: none;
+  }
 
   img {
     background-color: transparent;
     max-width: 3%;
     max-height: 3%;
   }
-
+  
   .title {
     font-size: 30px;
     font-weight: bold;
-    color: navy;
-
+    color: rgba(5, 14, 71);
+    
     .subtext {
       font-weight: lighter;
     }
   }
-
+  
   .links {
     margin-left: auto;
     
     a {
-      color: navy;
+      color: rgba(5, 14, 71);
       padding: 5px;
       font-size: 20px;
       text-decoration: none;
@@ -53,12 +52,7 @@ body {
     }
 
     a:visited {
-      color: navy;
+      color: rgba(5, 14, 71);
     }
   }
-}
-
-img {
-  max-height: 100%;
-  max-width: 100%;
 }

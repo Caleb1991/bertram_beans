@@ -30,6 +30,9 @@ gem "jbuilder"
 # Indent based view files
 gem "slim-rails"
 
+# Slim forms
+gem "simple_form"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
