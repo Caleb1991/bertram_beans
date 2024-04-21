@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.location {
+  background-color: navy;
+
+  .city-state {
+    color: gray;
+    font-weight: light;
+    text-align: right;
+    padding: 5px;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 5px;
+  align-items: center;
+
+  img {
+    background-color: transparent;
+    max-width: 3%;
+    max-height: 3%;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: navy;
+
+    .subtext {
+      font-weight: lighter;
+    }
+  }
+
+  .links {
+    margin-left: auto;
+    
+    a {
+      color: navy;
+      padding: 5px;
+      font-size: 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+  
+    a:hover {
+      text-decoration: line-through rgba(211, 211, 211, 0.5) 13px;
+    }
+
+    a:visited {
+      color: navy;
+    }
+  }
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
