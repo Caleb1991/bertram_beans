@@ -1,0 +1,7 @@
+.form
+  = simple_form_for @coworker_beverage do |f|
+    = f.input :beverage_id, label: false, as: :select, collection: @beverages, prompt: 'Select Beverage'
+    = f.input :coworker_id, label: false, as: :select, collection: @coworkers, prompt: 'Select Coworker'
+    = f.button :submit, 'Create'
+.body-img
+  = image_tag('stock_images/order.jpg')

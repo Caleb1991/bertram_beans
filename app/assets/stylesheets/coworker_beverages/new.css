@@ -1,0 +1,56 @@
+.form {
+  button {
+      font-size: 20px;
+      background: transparent;
+      border: none;
+    }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: rgba(5, 14, 71, 0.8);
+    color: lightgray;
+    border-radius: 25px;
+  }
+
+  .payer {
+    display: none;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: underline;
+  }
+}
+
+.receipt {
+  display: none;
+  justify-content: center;
+  
+  .title {
+    border: 2px dashed;
+    margin-bottom: 3px;
+    text-align: center;
+    font-weight: bolder;
+
+    table {
+      text-align: left;
+      padding: 10px;
+
+      th {
+        padding: 10px;
+        font-weight: normal;
+        font-style: italic;
+      }
+
+      td {
+        font-weight: normal;
+        padding-left: 10px;
+      }
+
+    }
+  }
+  
+  .foot {
+    text-align: right;
+    padding-top: 25px;
+    padding-right: 25px;
+  }
+}

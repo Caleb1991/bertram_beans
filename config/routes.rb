@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   resources :coworkers, only: [:new, :create]
   resources :beverages, only: [:new, :create]
+  resources :coworker_beverages, only: [:index, :new, :create]
 end

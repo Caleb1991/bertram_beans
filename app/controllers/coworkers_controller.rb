@@ -8,7 +8,7 @@ class CoworkersController < ApplicationController
     @coworker = Coworker.new(coworker_params)
 
     if @coworker.save
-      redirect_to '/', success: 'Coworker successfully added!'
+      redirect_to '/coworkers/new', success: 'Coworker successfully added!'
     else
       redirect_to '/coworkers/new', alert: @coworker.errors.full_messages.join
     end

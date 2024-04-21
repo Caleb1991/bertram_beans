@@ -1,0 +1,32 @@
+.form
+  button Determine Payer
+  .payer
+    = "Congratulations (we think???) #{@coworkers.first.name} it is your turn to pay!"
+
+.receipt
+  .title
+    | Your Receipt
+    table
+      thead
+        tr
+          th Name
+          th Beverage
+          th Cost
+      tbody
+        - @coworkers.each do |worker|
+          tr
+            td = worker.name
+            td = "  #{worker.beverage.name}"
+            td = "  $#{worker.beverage.cost}"
+    .foot
+      = "Grand Total $#{@total_cost}"
+
+.body-img
+  = image_tag('stock_images/calculations.jpg')
+
+javascript:
+  document.querySelector('.form button').onclick = function() {
+    document.querySelector('.receipt').style.display = 'flex';
+    document.querySelector('.payer').style.display = 'flex';
+    document.querySelector('button').style.display = 'none';
+  }
