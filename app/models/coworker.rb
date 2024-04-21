@@ -1,5 +1,5 @@
 class Coworker < ApplicationRecord
-  validates :name, presence: true, uniqueness: true
+  validates :name, presence: true, uniqueness: { case_sensitive: false }
   validates :cost_burden_incurred, numericality: true
   has_one :coworker_beverage
   has_one :beverage, through: :coworker_beverage

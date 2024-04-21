@@ -9,4 +9,21 @@ RSpec.describe 'coworker', type: :feature do
       expect(page).to have_button('Create')
     end
   end
+
+  it 'can create a coworker' do
+    visit '/coworkers/new'
+
+    fill_in :coworker_name, with: 'Peanut'
+    click_button 'Create'
+    expect(page).to have_text('Coworker successfully added!')
+  end
+
+  it 'returns an error when coworker name exists' do
+    Coworker.create!(name: 'Peanut')
+    visit '/coworkers/new'
+
+    fill_in :coworker_name, with: 'peanut'
+    click_button 'Create'
+    expect(page).to have_text('Name has already been taken')
+  end
 end

@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   root "home#index"
 
   resources :coworkers, only: [:new, :create]
+  resources :beverages, only: [:new, :create]
 end

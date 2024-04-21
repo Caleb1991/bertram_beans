@@ -1,0 +1,7 @@
+.form
+  = simple_form_for @beverage do |f|
+    = f.input :name, label: false, input_html: { id: 'beverage_name', placeholder: 'Beverage Name'}
+    = f.input :cost, label: false, input_html: { id: 'beverage_cost', placeholder: 'Beverage Cost', min: 0, step: 0.05 }
+    = f.button :submit, 'Create'
+.body-img
+  = image_tag('stock_images/beverages.jpg')
