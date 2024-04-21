@@ -5,7 +5,9 @@ RSpec.describe 'home', type: :feature do
     it 'contains a link for adding a cowrker' do
       visit '/'
 
-      expect(page).to have_link('Add Coworker')
+      expect(page).to have_link('Add a Coworker')
+      expect(page).to have_link('Add a Beverage')
+      expect(page).to have_link('Determine Payer')
     end
   end
 end
