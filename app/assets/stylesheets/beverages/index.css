@@ -1,14 +1,15 @@
-.coworkers {
-  font-size: 20px;
+.beverages {
+  font-size: 20px;  
   
   button {
     background-color: transparent;
     border: none;
     font-size: 20px;
   }
-
+  
   button:hover {
     text-decoration: underline red;
     cursor: pointer;
   }
 }
+

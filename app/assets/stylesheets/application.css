@@ -22,9 +22,24 @@ body {
 footer {
   padding: 10px;
   display: flex;
-  justify-content: center;
+  text-align: center;
+  flex-direction: column;
   background-color: rgba(5, 14, 71);
   color: lightgray;
+
+  a {
+    padding: 5px;
+    text-decoration: none;
+    color: lightgray;
+  }
+
+  a:visited {
+    color: lightgray;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .body-img img {
