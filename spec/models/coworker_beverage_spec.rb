@@ -12,8 +12,8 @@ RSpec.describe CoworkerBeverage, type: :model do
       Coworker.create!(name: coworker_name)
     end
 
-    7.times do |i|
-      CoworkerBeverage.create!(beverage_id: Beverage.all[i].id, coworker_id: Coworker.all[i].id)
+    { 'Jeremy': 'Latte', 'Bob': 'Tea, Earl Grey, Hot', 'Anya': 'Mocha', 'Bondo': 'Americano', 'Loid': 'Cappucino', 'Yor': 'Green Tea', 'Becky': 'Cold Brew' }. each do |employee, beverage|
+      CoworkerBeverage.create!(beverage_id: Beverage.find_by(name: beverage).id, coworker_id: Coworker.find_by(name: employee).id)
     end
   end
 
