@@ -81,6 +81,7 @@ While I am proud of the current state of the application, Bertram's Beans has an
 - ability to edit all items (coworkers/beverages/orders)
 - when removing a coworker, if they have any remaining cost burden, they must pay out and that is distributed to the remaining employees
 - when a beverage is removed, the affected coworkers are notified to select another drink
+- Admin mode where you can *strongly suggest* a certain user should be the one to pay (because they totally stole your parking spot)
 
 ## Assumptions When Creating This Product
 
