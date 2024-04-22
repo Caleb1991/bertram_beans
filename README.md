@@ -20,7 +20,7 @@ The following steps are required to instantiate the application locally:
 
 ## Prepopulate Data
 
-Running short on time? To bypass having to create a number of coworkers/beverages/orders you can simply run `rails db:seed` in your terminal while in the root directory of the repository and it will add a number of cowrkers/beverages/orders.
+Running short on time? To bypass having to create a number of coworkers/beverages/orders you can simply run `rails db:seed` in your terminal while in the root directory of the repository and with your server stopped. This will add a number of cowrkers/beverages/orders.
 
 ## Functionality
 
