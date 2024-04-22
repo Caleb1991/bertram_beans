@@ -1,0 +1,7 @@
+- if @coworkers
+  .coworkers
+    table
+      - @coworkers.each do |worker|
+        tr
+          td= worker.name
+          td= button_to 'Delete', coworker_path(worker), method: :delete

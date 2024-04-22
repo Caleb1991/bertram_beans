@@ -1,0 +1,8 @@
+- if @beverages
+  .beverages
+    table
+      - @beverages.each do |bev|
+        tr
+          td= bev.name
+          td= "$#{bev.cost}"
+          td= button_to 'Delete', beverage_path(bev), method: :delete

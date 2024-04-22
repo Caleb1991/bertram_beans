@@ -1,5 +1,10 @@
 class CoworkersController < ApplicationController
   before_action :set_empty_coworker, only: :new
+  before_action :set_all_coworkers, only: :index
+  before_action :set_coworker, only: :destroy
+
+  def index
+  end
 
   def new
   end
@@ -14,9 +19,26 @@ class CoworkersController < ApplicationController
     end
   end
 
+  def destroy
+    if @coworker
+      @coworker.destroy
+      redirect_to coworker_path
+    else
+      flash.error = 'Coworker does not exist'
+    end
+  end
+
   private
   def set_empty_coworker
     @coworker = Coworker.new
+  end
+
+  def set_all_coworkers
+    @coworkers = Coworker.all
+  end
+
+  def set_coworker
+    @coworker = Coworker.find(params[:id])
   end
   
   def coworker_params

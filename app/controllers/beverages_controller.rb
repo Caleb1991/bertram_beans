@@ -1,5 +1,10 @@
 class BeveragesController < ApplicationController
   before_action :set_empty_beverage
+  before_action :set_all_beverages, only: :index
+  before_action :set_beverage, only: :destroy
+
+  def index
+  end
   
   def new
   end
@@ -14,9 +19,26 @@ class BeveragesController < ApplicationController
     end
   end
 
+  def destroy
+    if @beverage
+      @beverage.destroy
+      redirect_to beverage_path
+    else
+      flash.alert = 'Beverage does not exist'
+    end
+  end
+
   private
   def set_empty_beverage
     @beverage = Beverage.new
+  end
+
+  def set_all_beverages
+    @beverages = Beverage.all
+  end
+
+  def set_beverage
+    @beverage = Beverage.find(params[:id])
   end
 
   def beverage_params
