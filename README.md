@@ -72,7 +72,7 @@ Clicking the `determine payer` link in the navbar will navigate you to a page th
 Betram's Beans currently utilizes RSpec and two other gems (capybara and shoulda-matchers) to provide a suite of unit and fucntional testing. To run the tests navigate to the root of the repository and simply type `rspec` into the terminal. Entering the command will run all of the tests and return whether or not they have passed. You can refine your test running by providing the file path/directory as follows `rspec <file_path>`.
 
 ## Further Iterations
----
+
 While I am proud of the current state of the application, Bertram's Beans has an eye to the future. Further functionality and refinement is as follows:
 - Only returning one payer for the day, and providing a list of the upcoming payers
 - Move forms to modals, and have them appear on the homepage when clicking the associated link in the navbar rather than navigating to a page
