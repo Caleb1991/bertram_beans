@@ -21,7 +21,7 @@ The following steps are required to instantiate the application locally:
 
 ## Prepopulate Data
 
-Running short on time? To bypass having to create a number of coworkers/beverages/orders you can simply run `rails db:seed` in your terminal while in the root directory of the repository and with your server stopped. This will add a number of cowrkers/beverages/orders.
+Running short on time? To bypass having to create a number of coworkers/beverages/orders you can simply run `rails db:seed` in your terminal *_with your server stopped_* while in the root directory of the repository. This will add a number of cowrkers/beverages/orders.
 
 ## Functionality
 
@@ -35,7 +35,7 @@ At any point, you may click on Bertram Beans in the navbar to return to the home
 #### *Adding Coworkers*
 Adding coworkers is foundational to the Bertram Beans experience. This can be done by:
 - navigating to the add coworker form by clicking `add a coworker` in the navbar
-- once there, the form will prompt you to enter your or a coworker's name, the names must be unique, so if it's already taken try including a last initial.
+- once there, the form will prompt you to enter an employee's name. The names must be unique, so if it's already taken try including a last initial.
 - click submit to create the coworker
 
 #### *Deleting Coworkers*
@@ -51,7 +51,7 @@ Adding a Beverage is similar to adding a coworker:
 - click create to submit the beverage
 
 #### *Deleting Beverages*
-Similar to coworkers, if at any time you need to delete a beverage or just want to see a list of all of the coworkers currently in the system, the footer at the bottom of the page contains a link titled `all beverages`. Clicking on it will navigate you to the beverage index with a list of all current beverages. Clicking delete on one will delete it and any coworker's order they are currently associated with.
+Similar to coworkers, if at any time you need to delete a beverage or just want to see a list of all of the beverages currently in the system, the footer at the bottom of the page contains a link titled `all beverages`. Clicking on it will navigate you to the beverage index with a list of all current beverages. Clicking delete on one will delete it and any coworker's order they are currently associated with.
 
 ### Orders
 
@@ -93,3 +93,5 @@ As I was working through this product the following assumptions were made:
 - coworkers would only be associated with one drink
 - coworkers would not have food items with their drink
 - the currency was in USD
+- coworkers would not be taking days off from the program
+- coworkers would order the same drink every single time
