@@ -8,10 +8,5 @@ RSpec.describe CoworkerBeverage, type: :feature do
   end
 
   describe 'index' do
-    it 'contains a button to determine the payer' do
-      visit '/coworker_beverages'
-
-      expect(page).to have_button('Determine Payer')
-    end
   end
 end

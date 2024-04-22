@@ -1,12 +1,12 @@
 class CoworkerBeveragesController < ApplicationController
-  include CostCalculator
   before_action :set_empty_coworker_beverage, only: :new
   before_action :set_beverages, only: :new
   before_action :set_coworkers_without_beverages, only: :new
   before_action :set_coworkers, only: :index
 
   def index
-    @total_cost = CostCalculator.calculate_grand_total
+    @total_cost = CoworkerBeverage.calculate_grand_total
+    @payer = CoworkerBeverage.determine_payer
   end
 
   def new

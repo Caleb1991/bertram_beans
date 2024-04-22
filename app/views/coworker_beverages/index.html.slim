@@ -1,32 +1,30 @@
-.form
-  button Determine Payer
-  .payer
-    = "Congratulations (we think???) #{@coworkers.first.name} it is your turn to pay!"
+- if !CoworkerBeverage.all.present?
+  .form
+    | You must first add some orders
+- else
+  .form
+    .payer
+      = "Congratulations (we think???) #{@payer} it is your turn to pay!"
 
-.receipt
-  .title
-    | Your Receipt
-    table
-      thead
-        tr
-          th Name
-          th Beverage
-          th Cost
-      tbody
-        - @coworkers.each do |worker|
+  .receipt
+    .title
+      | Your Receipt
+      table
+        thead
           tr
-            td = worker.name
-            td = "  #{worker.beverage.name}"
-            td = "  $#{worker.beverage.cost}"
-    .foot
-      = "Grand Total $#{@total_cost}"
+            th Name
+            th Beverage
+            th Cost
+        tbody
+          - @coworkers.each do |worker|
+            tr
+              td = worker.name
+              td = "  #{worker.beverage.name}"
+              td = "  $#{worker.beverage.cost}"
+      .foot
+        = "Grand Total $#{@total_cost}"
+
+      = link_to "See you tomorrow!", coworker_beverages_path
 
 .body-img
   = image_tag('stock_images/calculations.jpg')
-
-javascript:
-  document.querySelector('.form button').onclick = function() {
-    document.querySelector('.receipt').style.display = 'flex';
-    document.querySelector('.payer').style.display = 'flex';
-    document.querySelector('button').style.display = 'none';
-  }
