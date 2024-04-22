@@ -1,16 +1,16 @@
 # Bertram Beans
----
+
 Bertram Beans is the latest in pay determining technology. With this product you can add you and your coworkers, your favorite beverages and their cost, associate those beverages with you and your coworkers, and even determine whose turn it is to pay with our sophisticated pay determining algorithm.
 
 ## Technologies
----
+
 - [Ruby](https://www.ruby-lang.org/en/) 2.7.5
 - [Rails](https://rubyonrails.org/) 7.0.8
 - [PostgreSQL](https://www.postgresql.org/)
 - [RSpec](https://rspec.info/) 6.1.1
 
 ## Setup
----
+
 The following steps are required to instantiate the application locally:
 - `git clone` this repository into the directory of your choice, then navigate to the root of the cloned repository
 - run `bundle install` in your terminal to install all dependencies for the project
@@ -19,11 +19,11 @@ The following steps are required to instantiate the application locally:
 - run `rails s` in your terminal to spin up a local server
 
 ## Prepopulate Data
----
+
 Running short on time? To bypass having to create a number of coworkers/beverages/orders you can simply run `rails db:seed` in your terminal while in the root directory of the repository and it will add a number of cowrkers/beverages/orders.
 
 ## Functionality
----
+
 ### Home Page
 
 #### Navigating Home
@@ -68,7 +68,7 @@ Not finding yourself or your coworker? Either you haven't created them/you via c
 Clicking the `determine payer` link in the navbar will navigate you to a page that returns whose turn it is to pay, and also provide them with a receipt of everyone's order, and the grand total. By clicking the `determine payer` link again, or the `see you tomorrow` link at the bottom of the receipt you may determine the next person's turn to pay.
 
 ## Testing
----
+
 Betram's Beans currently utilizes RSpec and two other gems (capybara and shoulda-matchers) to provide a suite of unit and fucntional testing. To run the tests navigate to the root of the repository and simply type `rspec` into the terminal. Entering the command will run all of the tests and return whether or not they have passed. You can refine your test running by providing the file path/directory as follows `rspec <file_path>`.
 
 ## Further Iterations
