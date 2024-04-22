@@ -26,35 +26,35 @@ Running short on time? To bypass having to create a number of coworkers/beverage
 
 ### Home Page
 
-#### Navigating Home
+#### *Navigating Home*
 At any point, you may click on Bertram Beans in the navbar to return to the homepage
 
 ### Coworkers
 
-#### Adding Coworkers
+#### *Adding Coworkers*
 Adding coworkers is foundational to the Bertram Beans experience. This can be done by:
 - navigating to the add coworker form by clicking `add a coworker` in the navbar
 - once there, the form will prompt you to enter your or a coworker's name, the names must be unique, so if it's already taken try including a last initial.
 - click submit to create the coworker
 
-#### Deleting Coworkers
+#### *Deleting Coworkers*
 If at any time you need to delete a coworker (that feels weird typing) or just want to see a list of all of the coworkers currently in the system, the footer at the bottom of the page contains a link titled `all coworkers` clicking on it will navigate you to the coworker index with a list of all current coworkers. Clicking delete on one will delete them and their associated drink order.
 
 ### Beverages
 
-#### Adding Beverages
+#### *Adding Beverages*
 Adding a Beverage is similar to adding a coworker:
 - navigating to the add beverage form by clicking `add a beverage` in the navbar
 - once there, the form will prompt you to enter the name of the beverage, the names must be unique
 - the form will also prompt you to add the cost of the beverage. You can enter this manually by typing, or use the included incrementer. The currency is USD.
 - click create to submit the beverage
 
-#### Deleting Beverages
+#### *Deleting Beverages*
 Similar to coworkers, if at any time you need to delete a beverage or just want to see a list of all of the coworkers currently in the system, the footer at the bottom of the page contains a link titled `all beverages`. Clicking on it will navigate you to the beverage index with a list of all current beverages. Clicking delete on one will delete it and any coworker's order they are currently associated with.
 
 ### Orders
 
-#### Adding an Order
+#### *Adding an Order*
 Adding an order is similar in functionality, minus the typing:
 - navigating to the add order form by clicking `add a coworker's order` in the navbar
 - once there, you will be able to find two drop downs, one to select the coworker, and one to select their beverage
@@ -64,7 +64,7 @@ Not finding yourself or your coworker? Either you haven't created them/you via c
 
 ### Payer
 
-#### Determine Payer
+#### *Determine Payer*
 Clicking the `determine payer` link in the navbar will navigate you to a page that returns whose turn it is to pay, and also provide them with a receipt of everyone's order, and the grand total. By clicking the `determine payer` link again, or the `see you tomorrow` link at the bottom of the receipt you may determine the next person's turn to pay.
 
 ## Testing
