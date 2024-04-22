@@ -67,6 +67,9 @@ Not finding yourself or your coworker? Either you haven't created them/you via c
 #### *Determine Payer*
 Clicking the `determine payer` link in the navbar will navigate you to a page that returns whose turn it is to pay, and also provide them with a receipt of everyone's order, and the grand total. By clicking the `determine payer` link again, or the `see you tomorrow` link at the bottom of the receipt you may determine the next person's turn to pay.
 
+#### How Does Decide Who Pays?
+The very first time you have it decide a payer, it will choose the person with the highest priced drink (if there's a tie it chooses a person alphabetically). Thereafter, the person with the highest `cost burden incurred` is chosen to pay. You accumulate cost burden every time you go for drinks, the price of your drink is added to your cost burden until it is your turn to pay wherein the grand total of the drinks is deducted from your cost burden.
+
 ## Testing
 
 Betram's Beans currently utilizes RSpec and two other gems (capybara and shoulda-matchers) to provide a suite of unit and fucntional testing. To run the tests navigate to the root of the repository and simply type `rspec` into the terminal. Entering the command will run all of the tests and return whether or not they have passed. You can refine your test running by providing the file path/directory as follows `rspec <file_path>`.
