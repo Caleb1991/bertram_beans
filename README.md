@@ -83,7 +83,7 @@ While I am proud of the current state of the application, Bertram's Beans has an
 - when a beverage is removed, the affected coworkers are notified to select another drink
 
 ## Assumptions When Creating This Product
----
+
 As I was working through this product the following assumptions were made:
 - coworkers would only be associated with one drink
 - coworkers would not have food items with their drink
