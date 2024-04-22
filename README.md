@@ -17,6 +17,7 @@ The following steps are required to instantiate the application locally:
 - run `rails db:create` in your terminal to create the database
 - run `rails db:migrate` in your terminal to run migrations
 - run `rails s` in your terminal to spin up a local server
+- in your favorite browser (this was tested with Chrome) navigate to `http://localhost:3000/`
 
 ## Prepopulate Data
 
